@@ -26,7 +26,7 @@ class SessionListScreen extends ConsumerWidget {
                 colors: [AppColors.primaryLight, AppColors.textPrimary],
               ).createShader(bounds),
               child: const Text(
-                'ShowComm',
+                'COUNT',
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.w800,
@@ -245,10 +245,10 @@ class _UserBanner extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
             decoration: BoxDecoration(
-              color: AppColors.primary.withOpacity(0.12),
+              color: AppColors.primary.withValues(alpha: 0.12),
               borderRadius: BorderRadius.circular(6),
               border: Border.all(
-                  color: AppColors.primary.withOpacity(0.3)),
+                  color: AppColors.primary.withValues(alpha: 0.3)),
             ),
             child: const Text(
               'VIEWER',
@@ -279,7 +279,7 @@ class _HostNewSessionCard extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              AppColors.primaryDark.withOpacity(0.6),
+              AppColors.primaryDark.withValues(alpha: 0.6),
               AppColors.surfaceHighlight,
             ],
             begin: Alignment.topLeft,
@@ -287,7 +287,7 @@ class _HostNewSessionCard extends StatelessWidget {
           ),
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: AppColors.primary.withOpacity(0.4),
+            color: AppColors.primary.withValues(alpha: 0.4),
           ),
         ),
         child: Row(
@@ -296,10 +296,10 @@ class _HostNewSessionCard extends StatelessWidget {
               width: 44,
               height: 44,
               decoration: BoxDecoration(
-                color: AppColors.primary.withOpacity(0.2),
+                color: AppColors.primary.withValues(alpha: 0.2),
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
-                    color: AppColors.primary.withOpacity(0.4)),
+                    color: AppColors.primary.withValues(alpha: 0.4)),
               ),
               child: const Icon(Icons.add_circle_outline_rounded,
                   color: AppColors.primaryLight, size: 24),
@@ -393,7 +393,7 @@ class _EmptySessionsState extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(Icons.wifi_find_rounded,
-              size: 56, color: AppColors.textMuted.withOpacity(0.5)),
+              size: 56, color: AppColors.textMuted.withValues(alpha: 0.5)),
           const SizedBox(height: 16),
           const Text(
             'No sessions found',

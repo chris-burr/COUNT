@@ -1,5 +1,5 @@
-name: showcomm
-description: Live production SMPTE timecode cue list app.
+name: count
+description: Live production SMPTE timecode cue list app (formerly ShowComm).
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -13,6 +13,7 @@ dependencies:
   shared_preferences: ^2.3.2
   google_fonts: ^6.2.1
   uuid: ^4.4.0
+  flutter_midi_command: ^1.0.2
 
 dev_dependencies:
   flutter_test:

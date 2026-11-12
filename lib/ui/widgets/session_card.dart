@@ -45,7 +45,7 @@ class SessionCard extends StatelessWidget {
                         color: AppColors.success,
                         boxShadow: [
                           BoxShadow(
-                            color: AppColors.success.withOpacity(0.5),
+                            color: AppColors.success.withValues(alpha: 0.5),
                             blurRadius: 6,
                           )
                         ],

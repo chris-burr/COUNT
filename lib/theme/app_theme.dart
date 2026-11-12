@@ -61,7 +61,7 @@ abstract final class AppTheme {
         iconTheme: IconThemeData(color: AppColors.textSecondary),
         actionsIconTheme: IconThemeData(color: AppColors.textSecondary),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: AppColors.surfaceElevated,
         elevation: 0,
         margin: EdgeInsets.zero,

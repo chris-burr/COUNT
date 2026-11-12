@@ -182,7 +182,7 @@ class _UserTile extends StatelessWidget {
                         color: AppColors.success,
                         boxShadow: [
                           BoxShadow(
-                            color: AppColors.success.withOpacity(0.5),
+                            color: AppColors.success.withValues(alpha: 0.5),
                             blurRadius: 5,
                           )
                         ],
@@ -215,7 +215,7 @@ class _Avatar extends StatelessWidget {
         ),
         border: Border.all(
           color: user.isMaster
-              ? AppColors.primary.withOpacity(0.5)
+              ? AppColors.primary.withValues(alpha: 0.5)
               : AppColors.border,
         ),
       ),
@@ -348,7 +348,7 @@ class _PermissionOption extends StatelessWidget {
               height: 36,
               decoration: BoxDecoration(
                 color: isCurrent
-                    ? AppColors.primary.withOpacity(0.15)
+                    ? AppColors.primary.withValues(alpha: 0.15)
                     : AppColors.surfaceElevated,
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(

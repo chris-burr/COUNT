@@ -36,14 +36,14 @@ class TimecodeDisplay extends StatelessWidget {
         borderRadius: BorderRadius.circular(isLarge ? 20 : 12),
         border: Border.all(
           color: isRunning
-              ? AppColors.primary.withOpacity(0.55)
+              ? AppColors.primary.withValues(alpha: 0.55)
               : AppColors.border,
           width: isRunning ? 1.5 : 1,
         ),
         boxShadow: isRunning
             ? [
                 BoxShadow(
-                  color: AppColors.primary.withOpacity(0.18),
+                  color: AppColors.primary.withValues(alpha: 0.18),
                   blurRadius: 32,
                   spreadRadius: 4,
                 ),
@@ -94,7 +94,7 @@ class TimecodeDisplay extends StatelessWidget {
                   boxShadow: isRunning
                       ? [
                           BoxShadow(
-                            color: AppColors.success.withOpacity(0.6),
+                            color: AppColors.success.withValues(alpha: 0.6),
                             blurRadius: 6,
                           )
                         ]

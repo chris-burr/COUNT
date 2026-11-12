@@ -145,7 +145,7 @@ class _Logo extends StatelessWidget {
             ),
             boxShadow: [
               BoxShadow(
-                color: AppColors.primary.withOpacity(0.4),
+                color: AppColors.primary.withValues(alpha: 0.4),
                 blurRadius: 24,
                 spreadRadius: 4,
               ),
@@ -162,7 +162,7 @@ class _Logo extends StatelessWidget {
             end: Alignment.bottomRight,
           ).createShader(bounds),
           child: const Text(
-            'ShowComm',
+            'COUNT',
             style: TextStyle(
               fontSize: 38,
               fontWeight: FontWeight.w800,
@@ -256,7 +256,7 @@ class _GetStartedButton extends StatelessWidget {
               ? null
               : [
                   BoxShadow(
-                    color: AppColors.primary.withOpacity(0.4),
+                    color: AppColors.primary.withValues(alpha: 0.4),
                     blurRadius: 20,
                     offset: const Offset(0, 6),
                   ),

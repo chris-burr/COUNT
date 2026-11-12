@@ -11,5 +11,5 @@ void main() async {
     statusBarIconBrightness: Brightness.light,
     statusBarBrightness: Brightness.dark,
   ));
-  runApp(const ProviderScope(child: ShowCommApp()));
+  runApp(const ProviderScope(child: CountApp()));
 }

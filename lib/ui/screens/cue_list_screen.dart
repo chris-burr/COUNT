@@ -322,7 +322,7 @@ class _ConnectionBar extends StatelessWidget {
               color: AppColors.success,
               boxShadow: [
                 BoxShadow(
-                    color: AppColors.success.withOpacity(0.5),
+                    color: AppColors.success.withValues(alpha: 0.5),
                     blurRadius: 5)
               ],
             ),
@@ -365,10 +365,10 @@ class _NextCuePreview extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         decoration: BoxDecoration(
-          color: AppColors.primary.withOpacity(0.08),
+          color: AppColors.primary.withValues(alpha: 0.08),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-              color: AppColors.primary.withOpacity(0.25)),
+              color: AppColors.primary.withValues(alpha: 0.25)),
         ),
         child: Row(
           children: [
@@ -423,7 +423,7 @@ class _EmptyCueList extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(Icons.queue_outlined,
-              size: 52, color: AppColors.textMuted.withOpacity(0.4)),
+              size: 52, color: AppColors.textMuted.withValues(alpha: 0.4)),
           const SizedBox(height: 16),
           const Text(
             'No cues yet',

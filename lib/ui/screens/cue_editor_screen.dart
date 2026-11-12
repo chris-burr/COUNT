@@ -40,8 +40,8 @@ class _CueEditorScreenState extends State<CueEditorScreen> {
     super.initState();
     final cue = widget.existingCue;
     _labelCtrl = TextEditingController(text: cue?.label ?? '');
-    if (cue != null) {
-      final parts = cue.timecode.split(':');
+    if (cue != null && cue.timecode != null) {
+      final parts = cue.timecode!.split(':');
       _hhCtrl = TextEditingController(text: parts[0]);
       _mmCtrl = TextEditingController(text: parts[1]);
       _ssCtrl = TextEditingController(text: parts[2]);
@@ -214,7 +214,7 @@ class _CueEditorScreenState extends State<CueEditorScreen> {
                         borderRadius: BorderRadius.circular(14),
                         boxShadow: [
                           BoxShadow(
-                            color: AppColors.primary.withOpacity(0.35),
+                            color: AppColors.primary.withValues(alpha: 0.35),
                             blurRadius: 16,
                             offset: const Offset(0, 4),
                           ),

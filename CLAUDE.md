@@ -1,8 +1,8 @@
-# ShowComm — Claude Context
+# COUNT — Claude Context
 
 ## What this project is
 
-ShowComm is a Flutter (Dart) mobile app for iOS and Android used in live
+COUNT is a Flutter (Dart) mobile app for iOS and Android used in live
 production environments (theatre, live events). It listens for SMPTE timecode
 from an ETC Response SMPTE Gateway over local WiFi (UDP port 5004), displays a
 cue list with live countdowns, and supports multi-device collaboration with a
@@ -24,7 +24,7 @@ available on Mac.
 - `lib/state/providers.dart` — Riverpod providers: `appStateProvider`, `timecodeProvider`, `currentSessionProvider`, `discoveredSessionsProvider` (mock data)
 - `lib/ui/screens/` — all six screens (see below)
 - `lib/ui/widgets/` — five reusable widgets
-- `ios/Runner/Info.plist` — `NSLocalNetworkUsageDescription` + `NSBonjourServices` for `_showcomm._tcp`
+- `ios/Runner/Info.plist` — `NSLocalNetworkUsageDescription` + `NSBonjourServices` for `_count._tcp`
 
 ### Screens
 
@@ -78,7 +78,7 @@ uuid: ^4.4.0                # UUID generation (ready for device IDs)
 
 ### 2. Session hosting & mDNS
 - Replace mock `discoveredSessionsProvider` with real mDNS using `nsd` package
-- `lib/core/session/mdns_service.dart` — advertise `_showcomm._tcp` when hosting
+- `lib/core/session/mdns_service.dart` — advertise `_count._tcp` when hosting
 - `lib/core/session/http_server.dart` — serve cue JSON via `shelf` + `shelf_io`
 
 ### 3. WebSocket sync
@@ -117,7 +117,7 @@ Permission values: `direct_edit` | `propose` | `view`
 
 ```bash
 # 1. Generate native iOS/Android layer (one-time, won't overwrite Dart files)
-flutter create . --org com.showcomm --project-name showcomm
+flutter create . --org com.count --project-name count
 
 # 2. Install packages
 flutter pub get

@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>ShowComm</string>
+	<string>COUNT</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>showcomm</string>
+	<string>count</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -42,12 +42,12 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 
-	<!-- ShowComm: local network access for timecode + session discovery -->
+	<!-- COUNT: local network access for timecode + session discovery -->
 	<key>NSLocalNetworkUsageDescription</key>
-	<string>ShowComm listens for SMPTE timecode and communicates with other devices on your local network.</string>
+	<string>COUNT listens for SMPTE timecode and communicates with other devices on your local network.</string>
 	<key>NSBonjourServices</key>
 	<array>
-		<string>_showcomm._tcp</string>
+		<string>_count._tcp</string>
 	</array>
 </dict>
 </plist>

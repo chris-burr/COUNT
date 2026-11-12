@@ -25,7 +25,7 @@ class CountdownChip extends StatelessWidget {
         width: 28,
         height: 28,
         decoration: BoxDecoration(
-          color: AppColors.success.withOpacity(0.12),
+          color: AppColors.success.withValues(alpha: 0.12),
           shape: BoxShape.circle,
         ),
         child: const Icon(Icons.check, size: 14, color: AppColors.success),
@@ -39,9 +39,9 @@ class CountdownChip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.12),
+        color: color.withValues(alpha: 0.12),
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: color.withOpacity(0.28)),
+        border: Border.all(color: color.withValues(alpha: 0.28)),
       ),
       child: Text(
         text,
